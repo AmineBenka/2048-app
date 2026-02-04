@@ -16,6 +16,9 @@ export default defineNuxtConfig({
       ]
     }
   },
+  experimental: {
+    oxcParser: false
+  },
 
   // Client-side only for the game
   ssr: false
