@@ -11,5 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: run lab2
-        run: chmod +x /deliverables/lab02/lab2.sh
-        run: ./deliverables/lab02/lab2.sh
+        run: |
+          chmod +x deliverables/lab02/lab2.sh
+          ./deliverables/lab02/lab2.sh
