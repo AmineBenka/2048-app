@@ -1,4 +1,4 @@
-name: Hello pipeline
+name: Run pipeline
 
 on:
   push:
@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: run lab2
-        run: ./../../deliverables/lab02/lab2.sh
+        run: ./deliverables/lab02/lab2.sh
