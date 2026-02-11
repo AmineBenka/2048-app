@@ -9,12 +9,25 @@ on:
 jobs:
   hello:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
-      - name: Debug tree
-        run: ls -R
 
-      - name: run lab2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Verify environment
+        run: |
+          node -v
+          pnpm -v
+
+      - name: Run lab2
         run: |
           chmod +x deliverables/lab02/lab2.sh
           ./deliverables/lab02/lab2.sh
