@@ -10,5 +10,5 @@ jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
-      - name: Say hello
-        run: echo "Hello pipelines' world !"
+      - name: run lab2
+        run: ./../../deliverables/lab02/lab2.sh
