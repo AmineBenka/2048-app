@@ -1,0 +1,21 @@
+  stages:
+    - build
+    - test
+    - deploy
+
+  build_job:
+    stage: build
+    script:
+      - echo "Compilation du projet"
+      - npm install
+
+  test_job:
+    stage: test
+    script:
+      - echo "Lancement des tests"
+      - npm test
+
+  deploy_job:
+    stage: deploy
+    script:
+      - echo "Déploiement de l'application"
